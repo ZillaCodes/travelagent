@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mill Travel</title>
+    <style>
+        header{
+            background-color: white;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            z-index: 99;
+        }
+        b{
+            color: blue;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        .navigation{
+            position: relative;
+            font-weight: 500;
+            margin-left: 50px;
+        }
+        li a{
+            text-decoration: none;
+            color: blue;
+            border: 1px solid none;
+            margin:10px ;
+            padding: 10px;
+            right: 0%;
+        }
+        li a:hover{
+            text-decoration: overline;
+        }
+        .reg a{
+            border: 1px solid black;
+            text-decoration: none;
+            background-color: blue;
+            color: white;
+            border-radius: 6px;
+        }
+        .main{
+            background-color:darkblue;
+            height: 800px;
+        }
+        .big{
+            color: white;
+            margin-right: 800px;
+            font-family:'Times New Roman';
+        }
+        .bold{
+            font-size: 50px;
+        }
+        .img{
+            float: right;
+            min: width 769px;
+            height:100%;
+            margin-left:15px;
+        }
+        button{
+            border: 1px solid black;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            background-color: aqua;
+        }
+        p strong{
+            font-size: 70px;
+            margin-left: 55px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(4, 21%);
+            text-align: center;
+            background-color:none;
+    column-gap: 56px;
+    border-radius: 20px;
+    height: 200px;
+        }
+        .grid-item{
+            grid-area: span 1;
+            border: solid 1px none;
+            border-radius: 30px;
+        }
+        .icon{
+            color: blue;
+            height: 25px;
+        }
+        #gallery{
+            display: flex;
+            height: 20rem;
+            gap: 1 rem;
+        }
+        #gallery > div{
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+        }
+        #gallery > div:hover{
+            flex: 5;
+        }
+        .content{
+            overflow: hidden;
+        }
+        p a{
+            text-decoration: none;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 2px;
+            color: rgb(255, 0, 100);
+        }
+        p a:hover{
+            background-color: black;
+            cursor: pointer;
+        }
+        .wtn{
+            position: relative;
+            overflow: hidden;
+            font-size: 1em;
+            font-weight: 20;
+            font-family: Helvetica;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.avif" alt="logo" width="120px">
+        <b>Mill Travelling Agency</b>
+        <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Recommendations</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="reg"><a href="#">Registration</a></li>
+            <li class="reg"><a href="#">Sign in</a></li>
+            <input type="search" placeholder="Search">
+        </ul>
+    </nav>
+    </header>
+    <div class="main">
+        <img class="img" src="21.webp">
+        <div class="big">
+        <span class="bold">The free business travel tool for
+            end-to-end trips
+        </span>
+            <p>milltravel.com for Business is the free and easy business travel platform. Book and manage complete business trips with the widest range of accommodations, flights and car rentals from around the world — 
+            no fees or subscription costs ever.</p><br>
+            <button>Get Started</button>
+    </div>
+</div>
+<div id="services">  <p><strong>Why people love Milltravel.com</strong></p>
+    <div class="grid-container">
+        <div class="grid-item">
+            <span class="icon"><ion-icon name="flash-outline"></ion-icon></span> <br>
+            <b>Fast and easy booking</b>
+            <p>Arrange flights, accommodations,
+             and car rentals in minutes on a single platform.</p>
+    </div>
+    <div class="grid-item">
+        <span class="icon"><ion-icon name="checkmark-done"></ion-icon></span> <br>
+        <b>100% free for all customers</b>
+        <p>Avoid subscription 
+            or booking fees no matter how many users 
+            your company adds.</p>
+</div>
+<div class="grid-item">
+    <img class="icon" src="apartment.png"> <br>
+    <b>Visit over 150k destinations</b>
+    <p>Select from the widest 
+        choice of hotels and accommodations 
+        around the world.</p>
+</div>
+<div class="grid-item">
+    <img class="icon" src="money-saving.png"><br>
+    <b>Save up to 20% on travel</b>
+    <p>Unlock unlimited discounts and travel 
+        rewards for your team at
+         hundred of thousands of properties.</p>
+</div>
+    </div>
+</div>
+    <div id="gallery">
+    <div style="background-image: url('1.avif');">
+        <div class="content">
+            <h1>Bahamas</h1>
+            <p class="wtn">
+                From soft white sandy beaches and turquoise blue waters, 
+                the Bahamas are a beach lovers paradise. It’s no wonder why so many people
+                 escape to these tropical islands. While you are there I am sure you are 
+                going to be enjoying some of the prettiest beaches in the world.
+            </p>
+            <p> To book a ticket <a href="#">Click here</a></p>
+        </div>
+    </div>
+    <div class="gallery  b" style="background-image: url('2.jpg');">
+        <div class="content">
+            <h1>Maldives</h1>
+            <p class="wtn">
+                Maldives is popular among tourists for its naturally pleasant
+                 environment including the blue ocean, white beaches and clean air.
+                 The weather in Maldives is also appropriate for 
+                 various water sports and activities.
+            </p>
+            <p> To book a ticket <a href="#">Click here</a></p>
+        </div>
+    </div>
+    <div style="background-image: url('3.avif');">
+        <div class="content">
+            <h1>Mykonos</h1>
+            <p class="wtn">
+                It is primarily known for its wild party scene,
+                 Mykonos offers luxury, history, top-notch cuisine, shimmering shores,
+                  and unique tours and activities. Thanks to its location, 
+                Mykonos is also an island-hopping leading destination.
+            </p>
+            <p> To book a ticket <a href="#">Click here</a></p>
+        </div>
+    </div>
+    <div style="background-image: url('3.jpg');">
+        <div class="content">
+            <h1>Boracay</h1>
+            <p class="wtn">
+                Boracay, one of the top Islands in the Philippines, is popular for
+                 its beaches and blessed with a long stretch of powdery white sand, 
+                 crystal clear and azure waters, and a stunning sunset. 
+                 Boracay is the most iconic island 
+                in the Philipines and has won multiple awards in previous years.
+            </p>
+            <p> To book a ticket <a href="#">Click here</a></p>
+        </div>
+    </div>
+    <div style="background-image: url('5.avif');">
+        <div class="content">
+            <h1>Palawan</h1>
+            <p class="wtn">
+                Unmatched beaches and an underground river make Palawan a runner 
+                for the finest island in the world. 
+                If you are lucky enough to visit the Philippines this year, 
+                make sure to block out some time
+                 on your itinerary to spend a few days exploring Palawan
+            </p>
+            <p> To book a ticket <a href="#">Click here</a></p>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
